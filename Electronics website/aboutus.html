@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> About</title>
+        <style>
+             body{
+                padding:0;
+                margin:0;
+                box-sizing:border-box;
+                /* background-image: url("images/background_home1.jpg"); */
+                background-size: cover;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+             }
+             .wraper{
+                 position:relative; 
+                 display:flex;
+                 justify-content: center;
+                 align-items:center; 
+             }
+             .background-color{
+                width:100%;
+                display:flex;
+             }
+             .about-container{
+                margin: 50px 50px 50px 50px;
+                width:85%;
+                min-height:80vh;
+                position:absolute;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                background-color:white;
+                border: 2px solid black;
+                padding:20px;
+                border-radius:5px;
+                box-shadow: 2px 3px 3px black;
+                /* box-shadow:24px 2px 30px #6d8dad; */
+
+             }
+             .image-container{
+                flex:1;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                
+             }
+             .image-container img{
+                width:600px;
+                height:550px;
+                /* object-fit:cover; */
+                border-radius:5px;
+                margin: 0;
+                display: inline-block
+             }
+             .text-container{
+                flex:1;
+                background-color:white;
+                display:flex;
+                justify-content:center;
+                align-items:flex-start;
+                flex-direction: column;
+             }
+             .text-container h1{
+                color: black;
+                margin-left: 170px;
+                font-size:50px;
+                padding:10px 0px;
+                text-align: center;
+             }
+             .text-container p{
+                font-size: 1rem;
+                padding:10px 0px;
+                color: black;
+                margin: 10 10 10 10;
+                text-align: center;
+             }
+             .text-container a{
+                text-decoration:none;
+                padding:12px;
+                border:2px solid rgb(218, 190, 247);
+                margin:30px 30 30 190;
+                background-color:aliceblue;
+                color:black;
+                font-size:20px;
+                border-radius:5px;
+                transition:.3s all ease-in-out;
+                margin-left: 210px;
+                margin-bottom:15px ;
+             }
+             .text-container a:hover{
+                background-color:black;
+                color:white;
+                border:2px solid white;
+             }
+        </style>
+    </head>
+    <body>
+<div clas="wraper">
+    <div class="background-color">
+        
+    </div>
+    <div class="about-container">
+        <div class="image-container">
+            <img src="images/aboutus.jpg" alt="">
+        </div>
+        <div class="text-container">
+            <h1>About us</h1>
+            <p>An Electronic Repair store is where damaged, run-down electronic things can repair quickly. In these types of shops, mechanics and experts are available to fix the problem of electronic items such as TV, washing machine, fans, and other electronics products.</p>
+                  <a href="homepage.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

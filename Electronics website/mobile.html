@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mobiles</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                /* background-image: url("images/background_home1.jpg"); */
+                background-size:contain;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .cards{
+                display: inline-block;
+                margin-left: 110px;
+                margin-top: 50px;
+                width: 23%;
+                box-shadow: 2px 3px 3px 3px rgb(68, 67, 67);
+                border-radius: 5px;
+                background-color: white;
+
+            }
+
+            .image img{
+                width: 90%;
+                padding-left: 15px;
+            }
+
+            .title{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            .des{
+                margin-top: 10px;
+                /* margin-bottom: 50px; */
+                line-height: 30px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            .des button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 10px;
+                background-color: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: black;
+                color: white;
+                transition: 0.5s;
+            }
+
+            .image hr{
+                border: 1px solid ;
+            }
+
+            .banner img{
+                width: 1550px;
+                height: 300px;
+            }
+            .banner{
+                border: 1px solid black;
+            }
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <!-- <img class="mySlides" src="images/independence-day-sale.jpg" height="300px" width="1550px"> -->
+            <img class="mySlides" src="images/xiomi_banner.jpg" height="300px" width="1550px">
+            <img class="mySlides" src="images/oppo_banner.jpg" height="300px" width="1550px">
+          </div>
+        <div class="main" >
+            <div class="cards">
+                <div class="image">
+                    <img src="images/apple.jpg" id="pic9" onclick="changeImage()">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Apple Iphone</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>79,999</del> 75,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/infinix.jpg" id="pic8" onclick="changeImage1()">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Infinix Hot 10s</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6.2 inch </p>
+                    <p>Ram: 4GB Memory: 64GB</p>
+                    <p><h3>Price:</h3><del>13,999</del> 11,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/iqoo.jpg" id="pic7">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>IQOO Z6</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6.3 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>24,999</del> 21,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/Motorola.jpg" id="pic6">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Motorola</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 5.8 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>21,999</del> 18,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/oppo-a5.jpg" id="pic5">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Oppo A5</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>20,999</del> 17,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/Xiaomi-Redmi-Note-9-Pro-Max.jpg" id="pic4">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Redmi Note 8</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6.2 inch </p>
+                    <p>Ram: 4GB Memory: 64GB</p>
+                    <p><h3>Price:</h3><del>25,999</del> 21,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/Samsung-Galaxy-M33-5G.jpg" id="pic3">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Samsung M33 5G</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6.1 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>31,999</del> 28,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/tecno.jpg" id="pic2">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Techno</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6.3 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>18,999</del> 16,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards">
+                <div class="image">
+                    <img src="images/vivo-x50.jpg" id="pic1">
+                    <hr>   
+                </div>
+                <div class="title">
+                    <h2>Vivo X50</h2>
+                </div>
+                <div class="des">
+                    <p>Size: 6.2 inch </p>
+                    <p>Ram: 6GB Memory: 128GB</p>
+                    <p><h3>Price:</h3><del>25,999</del> 22,999</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3000); // Change image every 3 seconds
+                }
+
+                function changeImage() {
+                    var image = document.getElementById('pic9');
+                    if (image.src.match("apple")) {
+                        image.src = "images/iphone_angle.jpg";
+                    }
+                    else {
+                        image.src = "images/iphone_angle.jpg";
+                    }
+                }
+
+                function changeImage1() {
+                    var image = document.getElementById('pic8');
+                    if (image.src.match("infinix")) {
+                        image.src = "images/infinix_angle.jpg";
+                    }
+                    else {
+                        image.src = "images/infinix_angle.jpg";
+                    }
+                }
+
+                </script>
+        
+
+        </div>
+
+        
+
+        
+    </body>
+</html>

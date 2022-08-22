@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}  
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+li {
+  float: left;
+  /* display: inline; */
+}
+
+li a {
+  display: block;
+  color:grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li a:hover {
+  color:white;
+}
+
+.search{
+    float: right;
+    margin-top: 12px;
+    margin-right: 40px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 200px;
+}
+.search:focus{
+  background-color: rgb(231, 230, 230);
+  outline: none;
+}
+
+.banner{
+    border: 1px solid black ;   
+}
+.items{
+          /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+          float: center;
+          margin-left: 70px;
+          margin-bottom: 30px;
+          height: 300px;
+          width: 400px;
+          border: 2px solid black;
+          border-radius: 5px;
+          
+}
+
+#products{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  margin: 0;
+font-family: 'Montserrat Alternates', sans-serif;
+  padding: 0;
+  /* background-image:url("images/background_home1.jpg") ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer{
+  width: 100%;
+  min-height: 300px;
+  max-height: auto;
+background-image: linear-gradient(to right top, #161616, #191919, #1b1b1b, #1e1e1e, #212121);
+  clear: both;
+}
+
+.widgetFooter{
+  /* width: calc(85%/3); */
+  height: auto;
+  /* float: left; */
+  padding: 2.5%;
+  text-align: center;
+}
+
+
+
+ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
+   color:white;
+   cursor: pointer;
+   
+}
+
+
+div.footerCopy{
+  clear: both;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  border-top: 1px solid #ccc;
+  background: #262626;
+}
+
+.foot{
+  margin-left: 100px;
+  padding-left: 100px;
+}
+
+.items:hover{
+  transform: scale(1.03);
+}
+
+.partners{
+  margin-left: 60px;
+  width: 91%;
+  height: 300px;
+  border: 2px solid white;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 3px 3px 3px 3px black;
+  background-color: white;
+}
+
+.partners img{
+  margin-left: 5px;
+  margin-top:30px ;
+  height: 200px;
+  width: 220px;
+}
+.partners h2{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.offer_photo{
+  margin-left: 65px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  height: 440px;
+  width: 90%;
+  background-image: url("images/offer_banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 1400px 350px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#signup_offer{
+  margin-top: 20px;
+  margin-left: 650px;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+
+.countdown{
+  border: 2px solid black;
+  margin-top: 300px;
+  margin-left: 600px;
+  height: 50px;
+  width: 220px;
+}
+
+#demo {
+  text-align: center;
+   margin-top: 20px;
+}
+.countdown{
+  border: 2px solid white;
+  background-color: white;
+  padding-bottom: 20px;
+  animation: blinker 1s linear infinite;
+  border-radius: 5px;
+}
+      @keyframes blinker {
+            30% {
+                background-color: orange;
+                color: white;
+                border: 2px solid orange;
+            }
+            50% {
+                background-color: blue;
+                color: white;
+                border: 2px solid white;
+            }
+            100% {
+                background-color: green;
+                color: white;
+                border: 2px solid green;
+            }
+        }
+
+#banner_button{
+  text-decoration: none;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="track.html">Online Help</a></li>
+  <li><a href="aboutus.html">About US</a></li>
+  <li><a href="feedback_form.html">Feedback</a></li>
+  <li ><a href="login.html">Login/Signup</a></li>
+  <input class="search" type="text" placeholder="Search" name="search">
+</ul>
+
+<div class="banner">
+  <!-- <img class="mySlides" src="images/independence-day-sale.jpg" height="300px" width="1550px"> -->
+  <img class="mySlides" src="images/banner_2.jpg" height="300px" width="1550px">
+  <img class="mySlides" src="images/Lg_banner.jpg" height="300px" width="1550px">
+  <img class="mySlides" src="images/oppo_banner.jpg" height="300px" width="1550px">
+  <img class="mySlides" src="images/xiomi_banner.jpg" height="300px" width="1550px">
+</div>       
+<div class="background">
+  <div >
+      <div>
+          <h1 id="products" style="color: black;">OUR PRODUCTS</h1>
+          <a href="telivison.html"><img class="items" title="Telivsion" src="images/tv.jpg">
+          </a>
+          
+          <a href="mobile.html"><img class="items" title="Mobiles" src="images/phone.jpg"></a>
+          
+          <a href="#"><img class="items" title="Air Conditioner" src="images/ac.jpg"></a>
+
+          <div class="offer_photo">
+            <div class="countdown">
+              <h1 id="demo"></h1>
+            </div>
+            <button type="button" id="signup_offer" ><a id="banner_button" href="signup.html">Click Here</a></button>
+          </div>
+          
+          <a href="#"><img class="items" title="Refrigerator" src="images/fridge.jpg"></a>
+          
+          <a href="#"><img class="items" title="Washing Machine" src="images/washing machine.png" style="background-color:white;"></a>
+          
+          <a href="#"><img  class="items" title="Laptop" src="images/laptop.jpg"></a>
+          
+      </div>
+      </div>
+  </div>
+  <div class="partners">
+        <h2>OUR PARTNERS</h2>
+        <img src="images/samsung_logo.jpg">
+        <img src="images/sony_logo.jpg">
+        <img src="images/OnePlus_logo.jpg">
+        <img src="images/mi_logo.jpg">
+        <img src="images/oppo_logo.jpg">
+        <img src="images/apple_logo.jpg">
+  </div>
+  <div>
+      <div class="footer-wrap">
+          <div class="widgetFooter">
+            <h4 class="uppercase">USEFUL LINKS</h4>
+            <ul id="footerUsefulLink">
+              <li class="foot" title="About US">
+                <a href="aboutus.html">&nbsp;About us</a>
+              </li>
+              <li class="foot" title="Our Team">
+                <a>&nbsp;Our team</a>
+              </li>
+              <li class="foot" title="Gallery">
+                <a>&nbsp;Gallery</a>
+              </li>
+              <li class="foot" title="Contact Us">
+                <a>&nbsp;Contact us</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="footerCopy">
+          <div class="inb">
+            <p>Copyrights<sup>&copy;</sup> 2022. Developed by ELMART</p>
+          </div>
+        </div>
+  </div>
+</div>
+
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+  }
+
+    // Set the date we're counting down to
+  var countDownDate = new Date("Aug 11, 2022 12:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML =  hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+
+</body>
+</html>
+
+
